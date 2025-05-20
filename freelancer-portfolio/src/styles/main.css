@@ -1,0 +1,245 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #222;
+}
+
+.header {
+    background: #222;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5vw 0 5vw;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #00b894;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hero .highlight {
+    color: #00b894;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cta-btn {
+    background: #00b894;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.cta-btn:hover {
+    background: #019875;
+}
+
+.cta-btn.secondary {
+    background: #fff;
+    color: #00b894;
+    border: 2px solid #00b894;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.about-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.about-highlights li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 1rem;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.7rem;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+blockquote {
+    background: #f1f1f1;
+    border-left: 5px solid #00b894;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+blockquote span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #555;
+    font-style: normal;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 150px;
+    align-self: flex-start;
+    background: #00b894;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button:hover {
+    background: #019875;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    color: #00b894;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero {
+        margin-top: 1rem;
+    }
+    main {
+        padding: 0 0.5rem;
+    }
+    .services-list,
+    .portfolio-list {
+        grid-template-columns: 1fr;
+    }
+}
