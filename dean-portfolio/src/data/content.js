@@ -153,6 +153,16 @@ export const projects = [
     accent: 'brand',
   },
   {
+    name: 'Excell Translator',
+    subtitle: 'Excell Translator',
+    description:
+      'An end-to-end school result management system with an admin portal and student results search. Uploads results via OCR extraction and lets students securely preview and download academic reports using admission numbers.',
+    image: '',
+    tags: ['React', 'OCR', 'Automation', 'Dashboard'],
+    live: 'https://excel-translator-ui.onrender.com/',
+    accent: 'accent',
+  },
+  {
     name: 'School Result Management',
     subtitle: 'Science Secondary School, Kafin Hausa',
     description:
